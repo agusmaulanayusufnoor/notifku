@@ -1,4 +1,4 @@
-<h1>Laravel Fonnte</h1>
+<h1>Notifku</h1>
 
 ![image](https://github.com/user-attachments/assets/9685d2bc-42ae-4df2-8069-84a0b25d5aa3)
 
