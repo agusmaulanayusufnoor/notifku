@@ -19,8 +19,7 @@
 1. Pastikan sudah memiliki local development server
 
 2. Clone project ini dengan perintah: 
-<br>git clone git@github.com:muhazmi/laravel-fonnte.git
-
+<br>git clone https://github.com/agusmaulanayusufnoor/notifku.git
 3. Sesuaikan value di file .env dari:
 <br>DB_CONNECTION
 <br>DB_HOST
