@@ -15,15 +15,19 @@
 
         <div class="form-container register-container">
             <form method="POST" action="{{ route('register') }}">
-            @csrf
+                @csrf
                 <h1>Daftar Akun</h1>
-                <input id="name" type="text" name="name" :value="old('name')" required autocomplete="name" placeholder="Name">
+                <input id="name" type="text" name="name" :value="old('name')" required autocomplete="name"
+                    placeholder="Name">
                 <x-input-error :messages="$errors->get('name')" class="mt-2" />
-                <input id="email" type="email" name="email" :value="old('email')" required autocomplete="username" placeholder="Email">
+                <input id="email" type="email" name="email" :value="old('email')" required
+                    autocomplete="username" placeholder="Email">
                 <x-input-error :messages="$errors->get('email')" class="mt-2" />
-                <input id="password" type="password" name="password" required autocomplete="new-password" placeholder="Password">
+                <input id="password" type="password" name="password" required autocomplete="new-password"
+                    placeholder="Password">
                 <x-input-error :messages="$errors->get('password')" class="mt-2" />
-                <input id="password_confirmation" type="password" name="password_confirmation" required autocomplete="new-password" placeholder="Confirm Password">
+                <input id="password_confirmation" type="password" name="password_confirmation" required
+                    autocomplete="new-password" placeholder="Confirm Password">
                 <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
                 <button>Register</button>
                 <!-- <span>or use your account</span>
@@ -40,9 +44,13 @@
                 @csrf
                 <!-- <h1>Login</h1> -->
                 <img src="{{ asset('../image/logo.png') }}" alt="Logo" class="logo">
-                <input id="email" type="email" name="email" :value="old('email')" required autocomplete="username" placeholder="Email">
+
+                <input id="email" type="email" name="email" :value="old('email')" required
+                    autocomplete="username" placeholder="Email">
+
                 <x-input-error :messages="$errors->get('email')" class="mt-2" />
-                <input id="password" type="password" name="password" required autocomplete="current-password" placeholder="Password">
+                <input id="password" type="password" name="password" required autocomplete="current-password"
+                    placeholder="Password">
                 <x-input-error :messages="$errors->get('password')" class="mt-2" />
                 <div class="content">
                     <div class="checkbox">
@@ -51,7 +59,7 @@
                     </div>
                     <div class="pass-link">
                         @if (Route::has('password.request'))
-                        <a href="{{ route('password.request') }}">Forgot password?</a>
+                            <a href="{{ route('password.request') }}">Forgot password?</a>
                         @endif
                     </div>
                 </div>

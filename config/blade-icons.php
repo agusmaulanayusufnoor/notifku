@@ -12,6 +12,16 @@ return [
     | set and a combination from the options below.
     |
     */
+    'collections' => [
+        'default' => [
+            'path' => 'resources/svg',
+            'prefix' => 'icon',
+        ],
+        'fontisto' => [
+            'path' => 'vendor/blade-ui-kit/blade-icons-fontisto/resources/svg',
+            'prefix' => 'fontisto',
+        ],
+    ],
 
     'sets' => [
 

@@ -7,6 +7,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Notifku') }}</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('image/favicon-32x32.png') }}">
+    <link rel="shortcut icon" href="{{ asset('image/favicon.ico') }}" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
