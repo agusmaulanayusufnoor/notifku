@@ -6,10 +6,10 @@
     <div class="py-5">
         <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
             <!-- Header Section -->
-            <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center justify-between mb-6 flex-wrap">
                 <h1 class="text-2xl font-bold">All Devices</h1>
                 <a href="{{ route('devices.create') }}"
-                    class="btn btn-sm btn-info text-pretty text-white">
+                    class="btn btn-sm btn-info text-pretty text-white mt-2 sm:mt-0">
                     Add New Device
                 </a>
             </div>
@@ -57,7 +57,7 @@
                                             </span>
                                         @endif
                                     </td>
-                                    <td class="px-6 py-3 space-x-2">
+                                    <td class="px-6 py-3 space-x-2 flex flex-wrap gap-2 justify-center">
                                         <button
                                             class="px-4 py-2 font-semibold text-white bg-blue-500 rounded hover:bg-blue-600"
                                             onclick="copyToClipboard('{{ $device['token'] }}')">
